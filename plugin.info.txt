@@ -1,0 +1,7 @@
+base event
+author Szymon Olewniczak
+email szymon.olewniczak@rid.pl
+date 2013-04-19
+name event
+desc Display a dokuwiki page for today's date.
+url http://www.dokuwiki.org/plugin:event
