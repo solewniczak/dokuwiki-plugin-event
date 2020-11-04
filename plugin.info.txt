@@ -1,7 +1,7 @@
 base event
 author Szymon Olewniczak
-email szymon.olewniczak@rid.pl
-date 2013-04-19
+email solewniczak@rid.pl
+date 2020-11-04
 name event
 desc Display a dokuwiki page for today's date.
-url http://www.dokuwiki.org/plugin:event
+url https://www.dokuwiki.org/plugin:event
