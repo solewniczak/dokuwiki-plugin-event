@@ -17,7 +17,7 @@ require_once DOKU_PLUGIN.'syntax.php';
  * need to inherit from this class
  */
 class action_plugin_event extends DokuWiki_Action_Plugin {
-    function register(&$controller) {
+    function register($controller) {
 	$controller->register_hook('PARSER_CACHE_USE', 'BEFORE', $this, '_preventCache', array ());
     }
     /**
@@ -25,7 +25,7 @@ class action_plugin_event extends DokuWiki_Action_Plugin {
      * @param mixed $param the parameters passed to register_hook when this handler was registered
      * @param object $event event object by reference
      */
-    function _preventCache(&$event, $param) 
+    function _preventCache($event, $param) 
     {
 	$event->preventDefault();
 	$event->stopPropagation();

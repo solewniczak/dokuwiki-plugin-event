@@ -29,13 +29,13 @@ class syntax_plugin_event extends DokuWiki_Syntax_Plugin {
     function connectTo($mode) {
 	$this->Lexer->addSpecialPattern('\[event]',$mode,'plugin_event');
     }
-    function handle($match, $state, $pos, &$handler) {
+    function handle($match, $state, $pos, $handler) {
 	//there should be possibility to set event page's format in the futhure
 	$format = 'polish_full';
 	return $format;
     }
 
-    function render($mode, &$renderer, $data) {
+    function render($mode, $renderer, $data) {
         if($mode == 'xhtml') {
 	    $event =& plugin_load('helper', 'event');
 
